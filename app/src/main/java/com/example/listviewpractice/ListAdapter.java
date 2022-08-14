@@ -13,9 +13,9 @@ import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 
-public class listAdapter extends ArrayAdapter<User> {
+public class ListAdapter extends ArrayAdapter<User> {
 
-    public listAdapter (Context context, ArrayList<User> userArrayList){
+    public ListAdapter(Context context, ArrayList<User> userArrayList){
         super(context, R.layout.listitem,userArrayList);
     }
 

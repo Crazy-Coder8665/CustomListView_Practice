@@ -2,7 +2,11 @@ package com.example.listviewpractice;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import com.example.listviewpractice.ListAdapter;
 
 import com.example.listviewpractice.databinding.ActivityMainBinding;
 
@@ -32,5 +36,24 @@ public class MainActivity extends AppCompatActivity {
             userArrayList.add(user);
 
         }
+
+        ListAdapter listAdapter = new ListAdapter(MainActivity.this,userArrayList);
+
+        binding.listview.setAdapter(listAdapter);
+        binding.listview.setClickable(true);
+        binding.listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                Intent i = new Intent(MainActivity.this,user_activity.class);
+                i.putExtra("name",name[i]);
+                i.putExtra("phone",phoneno[i]);
+                i.putExtra("country",country[i]);
+                i.putExtra("imageid",imageId[i]);
+                startActivity(i);
+            }
+
+        });
+
     }
 }
