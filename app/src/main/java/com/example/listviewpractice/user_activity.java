@@ -7,17 +7,17 @@ import android.os.Bundle;
 import android.util.Log;
 
 import com.example.listviewpractice.databinding.ActivityMainBinding;
-import com.example.listviewpractice.databinding.ActivityUserBinding;
-import com.example.listviewpractice.databinding.ActivityUserBinding;
+import com.example.listviewpractice.databinding.UserActivityBinding;
+import com.example.listviewpractice.databinding.ListitemBinding;
 
-public class UserActivity extends AppCompatActivity {
+public class user_activity extends AppCompatActivity {
 
-    ActivityUserBinding binding;
+    UserActivityBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityUserBinding.inflate(getLayoutInflater());
+        binding = UserActivityBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         Intent intent = this.getIntent();
