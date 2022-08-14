@@ -6,8 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.example.custom_listview.databinding.ActivityMainBinding;
-import com.example.custom_listview.databinding.ActivityUserBinding;
+import com.example.listviewpractice.databinding.ActivityMainBinding;
+import com.example.listviewpractice.databinding.ActivityUserBinding;
 import com.example.listviewpractice.databinding.ActivityUserBinding;
 
 public class UserActivity extends AppCompatActivity {
