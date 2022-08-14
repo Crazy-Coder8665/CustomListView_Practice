@@ -45,12 +45,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                Intent i = new Intent(MainActivity.this,user_activity.class);
-                i.putExtra("name",name[i]);
-                i.putExtra("phone",phoneno[i]);
-                i.putExtra("country",country[i]);
-                i.putExtra("imageid",imageId[i]);
-                startActivity(i);
+                Intent intent = new Intent(MainActivity.this,user_activity.class);
+                intent.putExtra("name",name[i]);
+                intent.putExtra("phone",phoneno[i]);
+                intent.putExtra("country",country[i]);
+                intent.putExtra("imageid",imageId[i]);
+                startActivity(intent);
             }
 
         });
