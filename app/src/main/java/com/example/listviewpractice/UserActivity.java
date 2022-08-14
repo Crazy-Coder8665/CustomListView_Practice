@@ -1,4 +1,4 @@
-package com.example.custom_listview;
+package com.example.listviewpractice;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,7 @@ import android.util.Log;
 
 import com.example.custom_listview.databinding.ActivityMainBinding;
 import com.example.custom_listview.databinding.ActivityUserBinding;
+import com.example.listviewpractice.databinding.ActivityUserBinding;
 
 public class UserActivity extends AppCompatActivity {
 
